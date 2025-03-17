@@ -1,0 +1,625 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html.body {
+    font-family: "Poppins", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Serif", serif;
+}
+
+.about-content {
+    background: linear-gradient(53deg, rgba(223, 131, 105, 1) 2%, rgba(170, 79, 122, 1) 22%, rgba(76, 50, 184, 1) 82%);
+}
+
+:root {
+    --text-color: #fafafa;
+    --secondary-text-color: #11131d;
+    --nav-btn: #1c2028;
+    --btn-color: #7D29ff;
+}
+
+.about-plane {
+    background: linear-gradient(58deg, rgba(238, 211, 175, 1) 0%, rgb(1 1 1) 30%, rgba(84, 52, 179, 1) 54%, rgba(161, 70, 125, 1) 76%, rgba(255, 162, 95, 1) 100%) !important;
+}
+
+@media screen and (max-width: 1366px) {
+
+    nav {
+        padding: 0px 1rem;
+    }
+
+    #header_content {
+        padding: 50px 8rem;
+    }
+
+    .about-container {
+        padding: 3rem 1rem;
+    }
+
+    .articles {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .about-articles {
+        padding: 0rem 5rem;
+    }
+
+    .new-content {
+        padding: 0rem 8rem;
+    }
+
+    .new-head {
+        padding: 0rem 8rem;
+    }
+
+    .newCard {
+        max-width: 320px;
+    }
+
+    .members-about h2 {
+        font-size: 2rem;
+    }
+
+    .members {
+        padding: 0rem 8rem;
+    }
+
+    .about-sub {
+        padding: 0rem 8rem;
+    }
+
+    .footer-con {
+        padding: 0rem 8rem;
+    }
+
+    .bottom-footer {
+        gap: 100px;
+    }
+
+    .sys-header,
+    .sys-heading,
+    .all-heading,
+    .callout,
+    .quotes,
+    .bookmarks,
+    .product,
+    .images,
+    .gallery,
+    .s-header,
+    .g-res,
+    .toggles,
+    .highlighting,
+    .plan {
+        padding: 1rem 8rem;
+    }
+
+    .s-res {
+        text-align: center;
+    }
+
+    .s-p-res {
+        padding: 0rem 5rem;
+    }
+
+    .c-p-res {
+        padding: 0 80px;
+    }
+
+    .about-plane {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .month {
+        width: 100%;
+        height: 49%;
+    }
+
+    .plan {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    #right {
+        position: absolute;
+        background-color: #fafafa;
+        right: 0;
+        top: 10vh;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+        align-items: end;
+        opacity: 0;
+        visibility: hidden;
+        transition: .1s;
+        z-index: -100;
+    }
+
+    #right.open {
+        opacity: 1;
+        visibility: visible;
+        top: 10vh;
+        z-index: 100;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: .5rem;
+        width: 100%;
+    }
+
+    .l-res {
+        margin: 0;
+        color: #11131d;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        outline: 2px solid var(--text-color);
+        border-radius: 50%;
+        display: block;
+    }
+
+    #header_content {
+        font-size: 3rem;
+        line-height: 60px;
+        padding: 50px 6rem;
+    }
+
+    #hero_inputs {
+        width: 60%;
+        height: 70px;
+    }
+
+    .email-i {
+        font-size: 1.1rem;
+    }
+
+    .sub-btn {
+        padding: 12px 40px;
+        font-size: 1.2rem
+    }
+
+    .articles {
+        transform: translateY(0);
+    }
+
+    .new-content {
+        padding: 0rem 1rem;
+    }
+
+    .new-head {
+        padding: 0rem 1rem;
+    }
+
+    .newCard {
+        max-width: 280px;
+    }
+
+    .members-about h2 {
+        font-size: 2rem;
+    }
+
+    .members {
+        padding: 0rem 1rem;
+    }
+
+    .about-sub {
+        padding: 0rem 1rem;
+    }
+
+    .footer-con {
+        padding: 0rem 1rem;
+    }
+
+    .bottom-footer {
+        gap: 80px;
+    }
+
+    .sys-header,
+    .sys-heading,
+    .all-heading,
+    .callout,
+    .quotes,
+    .bookmarks,
+    .product,
+    .images,
+    .gallery,
+    .s-header,
+    .g-res,
+    .toggles,
+    .highlighting,
+    .ghost,
+    .plan {
+        padding: 0rem 1rem;
+    }
+
+    .sys-g h2 {
+        font-size: 3rem;
+    }
+
+    .sys-g p {
+        font-size: 1.6rem;
+    }
+
+    .sys-heading {
+        text-align: center;
+    }
+
+    .h-p-res {
+        padding: 0 80px;
+    }
+
+    .all-heading {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .callout {
+        text-align: center;
+    }
+
+    .c-res {
+        padding: 0 80px;
+    }
+
+    .cl-crd {
+        width: 90%;
+        height: 300px;
+    }
+
+
+    .callout-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+    }
+
+    .quotes {
+        text-align: center;
+    }
+
+    .quotes-header p {
+        width: 100%;
+        padding: 0 80px;
+    }
+
+    .q-2-res {
+        width: 100%;
+        text-align: center;
+        padding: 0 80px;
+    }
+
+    .ghost {
+        text-align: center;
+    }
+
+    .bookmarks {
+        text-align: center;
+    }
+
+    .book-p-res,
+    .pro-res,
+    .img-res,
+    .gall-res,
+    .header-p-res,
+    .togg-p-res,
+    .high-res-p {
+        width: 100%;
+        padding: 0 80px;
+    }
+
+    .book-c {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-book {
+        width: 80%;
+    }
+
+    .product,
+    .images,
+    .gallery,
+    .s-header,
+    .toggles,
+    .highlighting {
+        text-align: center;
+    }
+
+    .ghost {
+        padding: 50px 0;
+    }
+
+    .s-res {
+        padding: 10px 20px;
+        line-height: 45px;
+    }
+
+    .s-p-res {
+        padding-top: 20px;
+    }
+
+    .p-head-res {
+        font-size: 3rem;
+    }
+
+    .plan {
+        padding-top: 100px;
+    }
+
+    .c-p-res {
+        font-size: 1.5rem;
+    }
+
+    .c-img {
+        display: none;
+    }
+
+    .contact {
+        height: 70vh;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #header_content {
+        font-size: 2.2rem;
+        line-height: 50px;
+        padding: 50px 2rem;
+    }
+
+    #sub {
+        justify-content: center;
+        padding: 0px 1rem;
+    }
+
+    #hero_inputs {
+        width: fit-content;
+        height: 60px;
+    }
+
+    .email-i {
+        font-size: 1rem;
+    }
+
+    .sub-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .check-p {
+        font-size: .8rem;
+    }
+
+    .about-articles {
+        padding: 1rem 0rem;
+        margin-top: 2rem;
+    }
+
+    .card-a {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-content {
+        padding: 1rem;
+    }
+
+    .about-articles p {
+        font-size: 1.5rem;
+    }
+
+    .new-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .newCard {
+        max-width: 100%;
+    }
+
+    .new-row {
+        width: 100%;
+    }
+
+    .new-head {
+        text-align: center;
+    }
+
+    .members {
+        padding: 0rem 1rem;
+    }
+
+    .members-dec img {
+        height: 220px;
+    }
+
+    .members-about h2 {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .members-con {
+        padding-top: 0rem;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .res-about-ul {
+        font-size: 1rem;
+    }
+
+    .res-ab {
+        flex-direction: column;
+    }
+
+    .about-join {
+        margin-top: 20px;
+    }
+
+    .res-join {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .footer-con {
+        padding: 0rem 1rem;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .all-h {
+        font-size: 2.5rem !important;
+    }
+
+    .all-p-res {
+        font-size: 1.2rem !important;
+    }
+
+    .sys-dec {
+        padding: 5px 10px;
+    }
+
+    .sys-dec p {
+        line-height: 30px;
+    }
+
+    .h-p-res,
+    .c-res,
+    .book-p-res,
+    .pro-res,
+    .img-res,
+    .gall-res,
+    .header-p-res,
+    .togg-p-res,
+    .high-res-p {
+        padding: 5px 10px;
+    }
+
+    .callout-card {
+        display: block;
+        margin: 0;
+    }
+
+    .call-card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cl-crd {
+        height: 200px;
+    }
+
+    .q-p {
+        padding: 5px 10px !important;
+        font-size: 1.2rem !important;
+    }
+
+    .q-2-res {
+        width: 100% !important;
+    }
+
+    .book-c,
+    .bookmark-card,
+    .card-book {
+        width: 100%;
+    }
+
+    .i-res {
+        width: 100%;
+    }
+
+    .g-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .g-i img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .gallery-i {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ghost-c {
+        height: 50vh;
+    }
+
+    .sound {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .sound-i {
+        width: 100%;
+        height: 40%;
+    }
+
+    .sound-c {
+        width: 100%;
+        height: 60%;
+    }
+
+    .highlighting {
+        padding-bottom: 50px;
+    }
+
+    .logo,
+    .f-logo {
+        height: 30px;
+    }
+
+    .plan {
+        padding-bottom: 50px;
+    }
+
+    .contact {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-container {
+        height: 90vh;
+        align-items: center;
+    }
+
+    .inputs-res {
+        width: 100%;
+    }
+
+}
