@@ -3,8 +3,6 @@ import ArticlesCard from "../Components/ArticlesCard";
 import NewCard from "../Components/NewCard";
 import JoinBtn from "../Components/joinBtn";
 import Footer from "../Components/footer";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
   const blogType = [
