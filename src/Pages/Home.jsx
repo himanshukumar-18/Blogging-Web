@@ -111,6 +111,7 @@ const Home = () => {
 
   return (
     <>
+    {/* nav */}
       {/* home header */}
       <div id="home_header" className="w-full h-auto bg-[#11131d]">
         <div
